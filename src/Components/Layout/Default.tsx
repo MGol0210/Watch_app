@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Layout, Spin } from "antd"
-import Header from "./Header"
-import Footer from "./Footer"
+import Header from "../Layout/Header"
+import Footer from "../Layout/Footer"
 
 const { Content } = Layout
 
@@ -11,7 +11,7 @@ export const DefaultLayout = (props: any) => {
 	return (
 		<Layout className="main-layout">
 			<Header />
-			<Content className="maint-content">
+			<Content className="maint-content"  style={{backgroundColor: '#E5E5E5'}}>
 				<Spin tip={"Đang tải..."} spinning={loading}>
 					{props.children}
 				</Spin>
