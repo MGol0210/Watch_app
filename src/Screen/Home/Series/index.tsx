@@ -12,15 +12,18 @@ const listSeries: dataSeries[] = [
 const Series: React.FC = () => {
   return(
     <SeriesWapper>
-      {listSeries.map((item) => {
-        return (
-          <div className="series-wrapper" key={item.id}>
-            <div className="series-title">{item.name}</div>
-            <div className="separation"></div>
-            <SeriesProduct name={item.name} />
-          </div>
-        )
-      })}
+      <div className="series-overview">
+        {listSeries.map((item) => {
+          return (
+            <div className="series-wrapper" key={item.id}>
+              <div className="series-title">{item.name}</div>
+              <div className="separation"></div>
+              <SeriesProduct name={item.name} />
+            </div>
+          );
+        })}
+      </div>
+      <button className="more">See More</button>
     </SeriesWapper>
   );
 };

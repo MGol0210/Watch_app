@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const SeriesPWapper = styled.div`
-& > .list-product-overview {
+  & > .list-product-overview {
     & > .product-wrapper {
       margin: 0 0 32px 0;
       display: flex;

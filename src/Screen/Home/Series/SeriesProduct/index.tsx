@@ -2,13 +2,12 @@ import React from "react";
 import {SeriesPWapper} from './styles';
 import {listProduct} from './products';
 
-import images from "../../../../assets/Images";
-
 type IProps = {
   name: string;
 };
 
-const SeriesProduct: React.FC<IProps> = ({name}) => {
+
+const SeriesProduct: React.FC<IProps> = ({ name }) => {
   return(
     <SeriesPWapper>
       <div className="list-product-overview">
@@ -17,7 +16,7 @@ const SeriesProduct: React.FC<IProps> = ({name}) => {
           .map((item) => (
             <div className="product-wrapper">
               <div className="img-wrapper">
-                <img src={images.Product_1} alt="product" />
+                <img src={item.img} alt="product" />
               </div>
               <div className="info-product">
                 <p className="product-name">{item.name}</p>
@@ -29,7 +28,8 @@ const SeriesProduct: React.FC<IProps> = ({name}) => {
                 <p className="product-promotion">{item.promotion}</p>
               </div>
             </div>
-          ))}
+          ))
+          }
       </div>
     </SeriesPWapper>
   );
