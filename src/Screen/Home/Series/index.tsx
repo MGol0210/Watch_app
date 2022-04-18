@@ -1,6 +1,6 @@
 import React from "react";
 import { dataSeries } from "../../../common/data";
-import { SeriesWapper } from './styles';
+import { SeriesWrapper } from './styles';
 import SeriesProduct from "./SeriesProduct";
 
 const listSeries: dataSeries[] = [
@@ -11,7 +11,7 @@ const listSeries: dataSeries[] = [
 
 const Series: React.FC = () => {
   return(
-    <SeriesWapper>
+    <SeriesWrapper>
       <div className="series-overview">
         {listSeries.map((item) => {
           return (
@@ -24,7 +24,7 @@ const Series: React.FC = () => {
         })}
       </div>
       <button className="more">See More</button>
-    </SeriesWapper>
+    </SeriesWrapper>
   );
 };
 

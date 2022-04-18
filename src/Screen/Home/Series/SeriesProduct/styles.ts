@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const SeriesPWapper = styled.div`
+const SeriesPWrapper = styled.div`
   & > .list-product-overview {
     & > .product-wrapper {
       margin: 0 0 32px 0;
@@ -65,4 +65,4 @@ const SeriesPWapper = styled.div`
   }
 `
 
-export {SeriesPWapper}
+export {SeriesPWrapper}

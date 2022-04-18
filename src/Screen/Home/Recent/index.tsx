@@ -1,10 +1,10 @@
-import {RecentWapper} from './styles';
+import {RecentWrapper} from './styles';
 
 import images from '../../../assets/Images';
 
 const Recent: React.FC = () =>{
   return(
-    <RecentWapper>
+    <RecentWrapper>
       <div className="wrapper-left">
         <p className="recent-title">Recent News</p>
         <div className="separation"></div>
@@ -15,7 +15,7 @@ const Recent: React.FC = () =>{
       <div className="wrapper-right">
         <img className="recent-img" src={images.Product_5} alt="recent-img" />
       </div>
-    </RecentWapper>
+    </RecentWrapper>
   )
 }
 

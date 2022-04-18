@@ -1,5 +1,5 @@
 import React from "react";
-import {SeriesPWapper} from './styles';
+import {SeriesPWrapper} from './styles';
 import {listProduct} from './products';
 
 type IProps = {
@@ -9,7 +9,7 @@ type IProps = {
 
 const SeriesProduct: React.FC<IProps> = ({ name }) => {
   return(
-    <SeriesPWapper>
+    <SeriesPWrapper>
       <div className="list-product-overview">
         {listProduct
           .filter((item) => item.series === name)
@@ -31,7 +31,7 @@ const SeriesProduct: React.FC<IProps> = ({ name }) => {
           ))
           }
       </div>
-    </SeriesPWapper>
+    </SeriesPWrapper>
   );
 };
 

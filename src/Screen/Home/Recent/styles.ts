@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const RecentWapper = styled.div`
+const RecentWrapper = styled.div`
   margin: 141px 0 0 0;
   display: flex;
   justify-content: space-between;
@@ -81,4 +81,4 @@ const RecentWapper = styled.div`
   }
 `
 
-export {RecentWapper};
+export {RecentWrapper};

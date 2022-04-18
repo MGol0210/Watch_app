@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const SeriesWapper = styled.div`
+const SeriesWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -26,7 +26,8 @@ const SeriesWapper = styled.div`
       }
 
       & > .separation {
-        border: 1px solid #000000;
+        background-color: #000000;
+        height: 1.5px;
         width: 65px;
         margin: 8px 0 52px 0;
       }
@@ -52,4 +53,4 @@ const SeriesWapper = styled.div`
   }
 `
 
-export {SeriesWapper};
+export {SeriesWrapper};
