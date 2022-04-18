@@ -1,11 +1,30 @@
 const images = {
   Logo: require('./images/image 5.png'),
+  Logo_Footer: require('./images/Logo_F.png'),
   Logo_Cilil: require('./images/logo-cicil-white 1.png'),
+  Logo_BNI: require('./images/image 25.png'),
+  Logo_PermataBank: require('./images/image 26.png'),
+  Logo_MC: require('./images/image 27.png'),
+  Logo_Danamon: require('./images/image 28.png'),
+  Logo_VISA: require('./images/image 29.png'),
+  Logo_mandiri: require('./images/image 32.png'),
+  Logo_Kredivo: require('./images/image 33.png'),
+  Logo_UOB: require('./images/image 34.png'),
+  Logo_GOPAY: require('./images/image 35.png'),
+  Logo_SC: require('./images/image 36.png'),
 
   Btn_Left: require('./images/Left.png'),
   Btn_Right: require('./images/Right.png'),
   Left_Arrow: require('./images/Left-Arrow.png'),
   Right_Arrow: require('./images/Right-Arrow.png'),
+
+  Icon_Search: require('./images/search.png'),
+  Icon_User: require('./images/user.png'),
+  Icon_Cart: require('./images/cart.png'),
+  Icon_Fb: require('./images/Facebook.png'),
+  Icon_Ig: require('./images/Instagram.png'),
+  Icon_Tw: require('./images/Twitter.png'),
+  Icon_Yt: require('./images/Youtube.png'),
 
   Vector_1: require('./images/Vector1.png'),
   Vector_2: require('./images/Vector2.png'),
@@ -13,6 +32,7 @@ const images = {
   Vector_4: require('./images/Vector 15.png'),
   Vector_5: require('./images/Vector 16.png'),
   Vector_6: require('./images/Vector 17.png'),
+  Vector_7: require('./images/Vector 19.png'),
 
 
   Product_1: require('./images/image 6.png'),

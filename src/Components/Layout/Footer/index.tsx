@@ -1,9 +1,17 @@
-import React from "react"
+import React from "react";
+import { FooterWrapper } from './styles';
+import FooterTop from './FooterTop';
+import FooterBot from './FooterBot';
 
 interface Props {}
 
-const Footer = (props: Props) => {
-	return <div>asdas</div>
+const Footer: React.FC = (props: Props) => {
+	return (
+		<FooterWrapper>
+			<FooterTop />
+			<FooterBot />
+		</FooterWrapper>
+	)
 }
 
-export default Footer
+export default Footer;

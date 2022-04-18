@@ -54,7 +54,8 @@ const TestimonialsWrapper = styled.div`
         margin: 8px 0 0 0;
       }
       & > .separation {
-        border: 1px solid #000000;
+        background-color: #000000;
+        height: 1.5px;
         width: 128px;
         margin: 8px 0 54px 0;
       }

@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable jsx-a11y/img-redundant-alt */
+/* eslint-disable jsx-a11y/alt-text */
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -100,18 +103,18 @@ const Header = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-						<Button>
-							<SearchIcon sx={{ color: '#333333'}}/>
+						<Button sx={{ width: 30, height: 30 }}>
+							<img src={images.Icon_Search} style={{ width: 30, height: 30 }}/>
 						</Button>
 						<Button sx={{ p: 0, mr: 2 }}>
-              <PersonOutlineIcon sx={{ color: '#333333'}}/>
+              <img src={images.Icon_User} />
 							<Typography sx={{ p: 1, color: '#333333', display: 'block', fontFamily: 'Taviraj' }}>
 								Login
 							</Typography>
             </Button>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 1, backgroundColor: '#F1DDC9' }}>
-                <LocalMallOutlinedIcon />
+                <img src={images.Icon_Cart}/>
               </IconButton>
             </Tooltip>
             <Menu
