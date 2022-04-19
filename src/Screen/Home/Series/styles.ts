@@ -8,7 +8,6 @@ const SeriesWrapper = styled.div`
     margin: 228px 165px 0 165px;
     display: flex;
     justify-content: space-between;
-
     align-items: stretch;
 
     & > .series-wrapper {

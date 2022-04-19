@@ -21,6 +21,7 @@ const images = {
   Icon_Search: require('./images/search.png'),
   Icon_User: require('./images/user.png'),
   Icon_Cart: require('./images/cart.png'),
+  Icon_AddCart: require('./images/add-cart.png'),
   Icon_Fb: require('./images/Facebook.png'),
   Icon_Ig: require('./images/Instagram.png'),
   Icon_Tw: require('./images/Twitter.png'),

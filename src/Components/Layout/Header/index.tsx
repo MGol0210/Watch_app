@@ -13,11 +13,11 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import SearchIcon from '@mui/icons-material/Search';
-import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
+import { Link } from 'react-router-dom';
 
 import images from '../../../assets/Images';
+
+import './styles.css';
 
 const pages = ['Watches', 'Eyewear', 'Accessories', 'New'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -51,7 +51,9 @@ const Header = () => {
             component="div"
             sx={{ mr: '20%', display: { xs: 'none', md: 'flex' } }}
           >
-          <img src={images.Logo} alt="image" />
+            <Link className='nav-link' to='/'>
+              <img src={images.Logo} alt="image" />
+            </Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -85,21 +87,34 @@ const Header = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Link className="nav-link" to='/detail'>
+                    {page}
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: '0.2%', mr: '5%', color: '#333333', display: 'block', fontFamily: 'Taviraj' }}
-              >
-                {page}
+              <Button>
+                <Link className="nav-link" to='/detail'>
+                  Watches
+                </Link>
               </Button>
-            ))}
+              <Button>
+                <Link className="nav-link" to='/'>
+                  Eyewear
+                </Link>
+              </Button>
+              <Button>
+                <Link className="nav-link" to='/detail'>
+                  Accessories
+                </Link>
+              </Button>
+              <Button>
+                <Link className="nav-link" to='/detail'>
+                  New
+                </Link>
+              </Button>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
