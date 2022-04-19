@@ -21,11 +21,11 @@ const SeriesProduct: React.FC<IProps> = ({ name }) => {
               <div className="info-product">
                 <p className="product-name">{item.name}</p>
                 {item.price ? (
-                  <p className="product-price">{item.price}</p>
+                  <p className="product-price">Rp {item.price}</p>
                 ) : (
                   <></>
                 )}
-                <p className="product-promotion">{item.promotion}</p>
+                <p className="product-promotion">Rp {item.promotion}</p>
               </div>
             </div>
           ))

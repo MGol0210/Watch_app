@@ -16,9 +16,16 @@ export type dataProducts = {
   price: number;
   promotion: number;
   series: string;
+  tag: string;
 };
 
 export type dataSeries = {
   id: number;
   name: string;
 };
+
+export type dataContent = {
+  id: number;
+  title: string;
+  content: string;
+}

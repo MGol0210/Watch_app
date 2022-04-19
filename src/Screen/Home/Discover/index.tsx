@@ -25,7 +25,7 @@ const CATEGORY: dataCategory[] = [
 
 interface Props {}
 
-const Banner = (props: Props) => {
+const Discover = (props: Props) => {
 	return (
     <CategoryWrapper>
       {CATEGORY.map((item) => {
@@ -47,4 +47,4 @@ const Banner = (props: Props) => {
   );
 };
 
-export default Banner;
+export default Discover;

@@ -10,6 +10,7 @@ export const listProduct: dataProducts[] = [
     price: 1500000,
     promotion: 1264000,
     series: "Ebony Series",
+    tag: "",
   },
   {
     id: 1,
@@ -19,6 +20,7 @@ export const listProduct: dataProducts[] = [
     price: 1500000,
     promotion: 1264000,
     series: "Maple Series",
+    tag: "",
   },
   {
     id: 2,
@@ -28,6 +30,7 @@ export const listProduct: dataProducts[] = [
     price: 1280000,
     promotion: 1118000,
     series: "Featured",
+    tag: "",
   },
   {
     id: 3,
@@ -37,6 +40,7 @@ export const listProduct: dataProducts[] = [
     price: 1280000,
     promotion: 1024000,
     series: "Featured",
+    tag: "",
   },
   {
     id: 4,
@@ -46,6 +50,7 @@ export const listProduct: dataProducts[] = [
     price: 1500000,
     promotion: 1264000,
     series: "Maple Series",
+    tag: "",
   },
   {
     id: 5,
@@ -55,6 +60,7 @@ export const listProduct: dataProducts[] = [
     price: 1500000,
     promotion: 1264000,
     series: "Maple Series",
+    tag: "",
   },
   {
     id: 6,
@@ -64,6 +70,7 @@ export const listProduct: dataProducts[] = [
     price: 1500000,
     promotion: 1264000,
     series: "Ebony Series",
+    tag: "",
   },
   {
     id: 7,
@@ -73,6 +80,7 @@ export const listProduct: dataProducts[] = [
     price: 1500000,
     promotion: 1264000,
     series: "Ebony Series",
+    tag: "",
   },
   {
     id: 8,
@@ -82,5 +90,6 @@ export const listProduct: dataProducts[] = [
     price: 1500000,
     promotion: 1264000,
     series: "Featured",
+    tag: "",
   },
 ];

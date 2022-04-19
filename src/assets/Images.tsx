@@ -26,6 +26,10 @@ const images = {
   Icon_Ig: require('./images/Instagram.png'),
   Icon_Tw: require('./images/Twitter.png'),
   Icon_Yt: require('./images/Youtube.png'),
+  Icon_Plus: require('./images/Plus.png'),
+  Icon_Minus: require('./images/Minus.png'),
+  Icon_Model_1: require('./images/Model1.png'),
+  Icon_Model_2: require('./images/Model2.png'),
 
   Vector_1: require('./images/Vector1.png'),
   Vector_2: require('./images/Vector2.png'),
@@ -53,6 +57,12 @@ const images = {
   Product_17: require('./images/image 24.png'),
   Product_15: require('./images/image 8.png'),
   Product_16: require('./images/image 9.png'),
+
+  Product_1_Review_1: require('./images/image-removebg-preview 1.png'),
+  Product_1_Review_2: require('./images/image-removebg-preview1 1.png'),
+  Product_1_Review_3: require('./images/image-removebg-preview2 1.png'),
+
+  Describe: require('./images/image 40.png'),
 
   Social_1: require('./images/Rectangle 38.png'),
   Social_2: require('./images/Rectangle 39.png'),

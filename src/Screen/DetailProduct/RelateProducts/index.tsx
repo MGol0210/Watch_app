@@ -25,7 +25,7 @@ export const listProduct: dataProducts[] = [
     price: 1500000,
     promotion: 1264000,
     series: "maple",
-    tag: "",
+    tag: "New",
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ export const listProduct: dataProducts[] = [
     price: 1280000,
     promotion: 1118000,
     series: "maple",
-    tag: "",
+    tag: "50% off",
   },
   {
     id: 3,
@@ -45,16 +45,16 @@ export const listProduct: dataProducts[] = [
     price: 1280000,
     promotion: 1024000,
     series: "maple",
-    tag: "",
+    tag: "20% off",
   },
 ];
 
 interface Props {}
 
-const Banner = (props: Props) => {
+const RelateProducts = (props: Props) => {
 	return (
     <DealsStyles>
-      <p className="monthly__deals-label">Monthly Deals</p>
+      <p className="monthly__deals-label">Relate Products</p>
       <div className="separation"></div>
       <div className="product-overview">
         {listProduct.map((item) => {
@@ -67,6 +67,9 @@ const Banner = (props: Props) => {
                 <p className="product-price">{item.price}</p>
                 <p className="product-promotion">Rp {item.promotion}</p>
               </div>
+              {/* <div className="tags">
+                <p>{item.tag}</p>
+              </div> */}
             </div>
           );
         })}
@@ -75,4 +78,4 @@ const Banner = (props: Props) => {
   );
 };
 
-export default Banner;
+export default RelateProducts;
