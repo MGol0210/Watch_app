@@ -14,10 +14,13 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
+import Modal from '@mui/material/Modal';
 
 import images from '../../../assets/Images';
 
 import './styles.css';
+import Cart from '../../../Screen/Cart';
+
 
 const pages = ['Watches', 'Eyewear', 'Accessories', 'New'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -40,6 +43,22 @@ const Header = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  const style = {
+  position: 'absolute' as 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '75%',
+  height: '80%',
+  bgcolor: '#F7F6F4',
+  boxShadow: 24,
+  p: 4,
+};
 
   return (
     <AppBar position="static" sx={{ backgroundColor: '#E5E5E5', paddingLeft: '8%', paddingRight: '10%', boxShadow:'none' }}>
@@ -127,33 +146,21 @@ const Header = () => {
 								Login
 							</Typography>
             </Button>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 1, backgroundColor: '#F1DDC9' }}>
+            <Tooltip title="Open Cart">
+              <IconButton onClick={handleOpen} sx={{ p: 1, backgroundColor: '#F1DDC9' }}>
                 <img src={images.Icon_Cart}/>
               </IconButton>
             </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
+            <Modal
+              open={open}
+              onClose={handleClose}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+              <Box sx={style}>
+                <Cart />
+              </Box>
+            </Modal>
           </Box>
         </Toolbar>
       </Container>

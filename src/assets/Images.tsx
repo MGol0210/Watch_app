@@ -21,6 +21,7 @@ const images = {
   Icon_Search: require('./images/search.png'),
   Icon_User: require('./images/user.png'),
   Icon_Cart: require('./images/cart.png'),
+  Icon_Trash: require('./images/Shape.png'),
   Icon_AddCart: require('./images/add-cart.png'),
   Icon_Fb: require('./images/Facebook.png'),
   Icon_Ig: require('./images/Instagram.png'),
@@ -57,6 +58,7 @@ const images = {
   Product_17: require('./images/image 24.png'),
   Product_15: require('./images/image 8.png'),
   Product_16: require('./images/image 9.png'),
+  Product_18: require('./images/image 17.png'),
 
   Product_1_Review_1: require('./images/image-removebg-preview 1.png'),
   Product_1_Review_2: require('./images/image-removebg-preview1 1.png'),
