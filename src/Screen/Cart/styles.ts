@@ -254,13 +254,19 @@ const CartWrapper = styled.div`
       height: 45%;
       background-color: #D84727;
       border: none;
+      
+      & > .check-out-link{
+        & > p{
+          font-family: "Taviraj";
+          font-size: 24px;
+          font-weight: 600;
+          color: #FFFFFF;
+          line-height: 50px;
+        }
+      }
 
-      & > p{
-        font-family: "Taviraj";
-        font-size: 24px;
-        font-weight: 600;
-        color: #FFFFFF;
-        line-height: 50px;
+      & > .check-out-link:hover{
+        text-decoration: none;
       }
     }
   }

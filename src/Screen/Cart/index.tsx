@@ -2,8 +2,8 @@ import * as React from 'react';
 import { dataProducts } from '../../common/data';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
-import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
+import { Link } from 'react-router-dom';
 
 import { CartWrapper } from './styles';
 
@@ -113,7 +113,9 @@ const Cart: React.FC = () => {
           </div>
         </div>
         <button className='check-out'>
-          <p>Checkout</p>
+          <Link className='check-out-link' to='/checkout'>
+            <p>Checkout</p>
+          </Link>
         </button>
       </div>
     </CartWrapper>
